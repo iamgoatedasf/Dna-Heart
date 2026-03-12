@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+
+<style>
+
+body{
+margin:0;
+background:black;
+overflow:hidden;
+}
+
+canvas{
+position:absolute;
+top:0;
+left:0;
+}
+
+#text{
+    transition: opacity 3.2 ease;
+
+position:absolute;
+top:50%;
+left:50%;
+
+transform:translate(-50%,-50%);
+
+color:#ff9ecb;
+
+font-size:95px;
+font-weight:700;
+
+letter-spacing:10px;
+
+opacity:0;
+
+transition:opacity 3.5s ease;
+
+text-shadow:
+0 0 20px #ff69b4,
+0 0 50px #ff1493,
+0 0 90px #ff1493;
+
+}
+</style>
+
+</head>
+
+<body>
+
+<canvas id="matrix"></canvas>
+
+<div id="text"></div>
+
+<script src="matrix.js"></script>
+<canvas id="heartCanvas"></canvas>
+<canvas id="heartCanvas" style="z-index:2;"></canvas>
+<button class="next-btn" onclick="goNext()">
+<div class="arrow"></div>
+</button>
+<script>
+function goNext(){
+window.location.href="DNAheart.html";
+}
+</script>
+
+</body>
+</html>
